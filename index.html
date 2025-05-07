@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Neumorphic Login Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #dde1e7;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .neumorphic {
+      background: #e0e5ec;
+      border-radius: 20px;
+      box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+      border: none;
+      outline: none;
+    }
+
+    .neumorphic-inset {
+      background: #e0e5ec;
+      border-radius: 20px;
+      box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px 20px #ffffff;
+    }
+
+    .neumorphic-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      width: 320px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .neumorphic-input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .neumorphic-button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .neumorphic-button:hover {
+      box-shadow: inset 5px 5px 10px #a3b1c6, inset -5px -5px 10px #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="neumorphic neumorphic-card">
+    <h1>Login</h1>
+    <input type="text" class="neumorphic neumorphic-input" placeholder="Username" />
+    <input type="password" class="neumorphic neumorphic-input" placeholder="Password" />
+    <button class="neumorphic neumorphic-button">Sign In</button>
+  </div>
+
+</body>
+</html>
